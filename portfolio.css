@@ -232,3 +232,83 @@ footer{
                 -webkit-animation-iteration-count: 1;
                 -webkit-box-shadow: 0 0 18px #FD6E0A;
         }
+        .submit-button{
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background: #FD6E0A;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            padding: 13px 35px;
+            transition: 0.5s;
+        }
+        .submit-button:hover{
+            background-color: #FFA836;
+        }
+        /* responsive styles for mobile viewport */
+        @media screen and (max-width: 576px){
+            *{
+                margin: 0px;
+                padding:0px;
+                
+            }
+                .skill-container {
+                    display: flex;
+                    gap: 24px;
+                    flex-direction: column;
+                } 
+                .about-info-container{
+                    flex-direction: column;
+                }
+                .resume-container{
+                    justify-content: flex-end;
+                }
+                .section-title{
+                    font-size: 24px;
+                }
+                .download-cv{
+                    margin-top: -400px;
+                    margin-left: 20px;
+                }
+                .about {
+                    padding: 25px;
+                }
+                nav{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .banner{
+                    padding: 0px 0px 0px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column-reverse;
+                }
+            footer{
+                padding: 10px;
+                flex-direction: column;
+            }
+            .footer-column{
+                width: 80%;
+                padding-left:36px;
+            }
+            .contact input[type="text"], input[type="email"] ,textarea{
+
+                width: 50%;
+            }
+            .submit-button{
+                margin-left: 90px;
+            }
+            .primary-button{
+                font-size: 17px;
+            }
+            .banner-content{
+                max-width: 500px;
+                padding: 20px;
+            }
+            .primary-button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
